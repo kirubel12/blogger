@@ -3,6 +3,7 @@ import Register from "../pages/Register.vue";
 import Login from "../pages/Login.vue";
 import Home from "../pages/Home.vue";
 import Dashboard from "../pages/Dashboard.vue";
+import Profile from "../pages/Profile.vue";
 
 const router = createRouter({
     history: createWebHistory(),
@@ -19,13 +20,17 @@ const router = createRouter({
         },
         {
             path: '/',
-            name: 'home',
             component: Home
         },
         {
             path: '/dashboard',
             name: 'dashboard',
             component: Dashboard
+        },
+        {
+            path: '/profile',
+            name:'profile',
+            component: Profile
         }
     ]
 })
